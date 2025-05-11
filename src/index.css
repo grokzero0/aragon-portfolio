@@ -7,8 +7,17 @@
   font-weight: normal bold;
 }
 
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("./font/atkinson-hyperlegible/AtkinsonHyperlegibleMonoVF-Variable.woff2")
+      format("woff2"),
+    url("./font/atkinson-hyperlegible/AtkinsonHyperlegibleMonoVF-Variable.ttf")
+      format("truetype");
+  font-weight: normal bold;
+}
+
 :root {
-  font-family: "Atkinson Hyperlegible", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Atkinson Hyperlegible", "Atkinson Hyperlegible Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -24,4 +33,5 @@
 
 body {
   min-height: 100vh;
+  height: 100vh;
 }
