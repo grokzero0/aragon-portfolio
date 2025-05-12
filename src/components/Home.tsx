@@ -8,10 +8,10 @@ export default function Home() {
       style={{
         justifyContent: "center",
         alignItems: "center",
-        padding: "10rem"
+        padding: "10rem",
       }}
     >
-      <Paper shadow="xl" withBorder p="xl">
+      <Paper shadow="xl" withBorder p="xl" radius="lg">
         <Title style={{ textAlign: "center" }}>Carlos Aragon Aldana</Title>
         <Text style={{ textAlign: "center" }} my="md">
           Cinematographer. Producer. Writer. 0

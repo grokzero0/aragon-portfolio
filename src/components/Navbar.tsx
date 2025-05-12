@@ -8,7 +8,9 @@ export default function Navbar() {
       <Group h="100%" justify="space-between" px="md">
         <Group h="100%">
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-          <Title order={2}>Carlos Aragon Aldana</Title>
+          <Anchor href="/">
+            <Title order={2}>Carlos Aragon Aldana</Title>
+          </Anchor>
         </Group>
         <Group h="100%">
           <Anchor href="/">Home</Anchor>
