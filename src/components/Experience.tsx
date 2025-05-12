@@ -7,6 +7,7 @@ export default function Experience() {
       <Grid>
         <Grid.Col span={8}>
           <Stack>
+            <Title>Hello!</Title>
             <Text size="lg">
               I'm a junior at Boston University studying film, television and
               advertising, learning the intersections between both industries

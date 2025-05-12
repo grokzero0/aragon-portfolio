@@ -1,6 +1,7 @@
-import { Grid, Image } from "@mantine/core";
+import { Grid } from "@mantine/core";
 import { portfolioItems } from "../assets/data";
 import ReactPlayer from "react-player";
+import HoverImage from "./HoverImage";
 
 export default function Portfolio() {
   return (
@@ -10,9 +11,7 @@ export default function Portfolio() {
           item.images &&
           item.images.map((image) => (
             <Grid.Col span={4}>
-              <div>
-                <Image h="auto" src={image}></Image>
-              </div>
+              <HoverImage image={image} name={item.name}></HoverImage>
             </Grid.Col>
           ))
       )}

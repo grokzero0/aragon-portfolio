@@ -10,7 +10,7 @@ export const Route = createRootRoute({
     <MantineProvider theme={theme}>
       <AppShell header={{ height: 70 }}>
         <Navbar></Navbar>
-        <AppShell.Main bg="grape">
+        <AppShell.Main>
           <Outlet />
           <TanStackRouterDevtools />
         </AppShell.Main>
