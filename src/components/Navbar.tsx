@@ -12,7 +12,7 @@ export default function Navbar() {
             <Title order={2}>Carlos Aragon Aldana</Title>
           </Anchor>
         </Group>
-        <Group h="100%">
+        <Group h="100%" visibleFrom="sm">
           <Anchor href="/">Home</Anchor>
           <Anchor href="/portfolio">Portfolio</Anchor>
           <Anchor href="/experience">Experience</Anchor>
