@@ -7,7 +7,9 @@ export default function Experience() {
       <Grid>
         <Grid.Col span={8}>
           <Stack>
-            <Title>Hello!</Title>
+            <Title c="violet" style={{ textAlign: "center" }}>
+              Hello!
+            </Title>
             <Text size="lg">
               I'm a junior at Boston University studying film, television and
               advertising, learning the intersections between both industries
@@ -36,7 +38,11 @@ export default function Experience() {
       </Title>
       <Accordion multiple={true} bg="forest-green" radius="lg">
         {experiences.map((experience) => (
-          <Accordion.Item key={experience.name} value={experience.name}>
+          <Accordion.Item
+            key={experience.name}
+            value={experience.name}
+            color="violet"
+          >
             <Accordion.Control>{experience.name}</Accordion.Control>
             <Accordion.Panel>{experience.description}</Accordion.Panel>
           </Accordion.Item>

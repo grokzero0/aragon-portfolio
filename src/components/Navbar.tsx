@@ -1,17 +1,12 @@
-import {
-  // ActionIcon,
-  Anchor,
-  AppShell,
-  Burger,
-  Group,
-  Title,
-  // useMantineColorScheme,
-} from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-// import { Moon, Sun } from "lucide-react";
+import { Anchor, AppShell, Burger, Group, Title } from "@mantine/core";
 
-export default function Navbar() {
-  const [opened, { toggle }] = useDisclosure();
+export default function Navbar({
+  opened,
+  toggle,
+}: {
+  opened: boolean;
+  toggle: () => void;
+}) {
   // const { colorScheme, setColorScheme } = useMantineColorScheme();
   // const computedColorScheme = useComputedColorScheme();
   return (

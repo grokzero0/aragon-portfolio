@@ -31,7 +31,7 @@ export const theme: MantineThemeOverride = createTheme({
     "4xl": rem("36px"),
     "5xl": rem("48px"),
   },
-  primaryColor: "lavender",
+  primaryColor: "violet",
   spacing: {
     "3xs": rem("4px"),
     "2xs": rem("8px"),
