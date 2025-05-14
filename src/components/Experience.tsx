@@ -34,7 +34,7 @@ export default function Experience() {
       <Title order={2} style={{ textAlign: "center", marginTop: "1rem" }}>
         Experience
       </Title>
-      <Accordion multiple={true}>
+      <Accordion multiple={true} bg="forest-green" radius="lg">
         {experiences.map((experience) => (
           <Accordion.Item key={experience.name} value={experience.name}>
             <Accordion.Control>{experience.name}</Accordion.Control>

@@ -23,7 +23,11 @@ export default function Contact() {
     <Stack justify="center" p="xl">
       <Title style={{ textAlign: "center" }}>Contact Me!</Title>
       <form
-        onSubmit={form.onSubmit((values) => console.log(values))}
+        action="https://usebasin.com/f/d91cb37a4462"
+        accept-charset="UTF-8"
+        encType="multipart/form-data"
+        method="POST"
+        // onSubmit={form.onSubmit((values) => console.log(values))}
         style={{
           display: "flex",
           flexDirection: "column",
@@ -34,6 +38,7 @@ export default function Contact() {
         <TextInput
           label="Name"
           placeholder="Your Name"
+          name="name"
           required
           key={form.key("name")}
           {...form.getInputProps("name")}
@@ -44,6 +49,7 @@ export default function Contact() {
           placeholder="Your Email Address"
           required
           type="email"
+          name="email"
           key={form.key("email")}
           size="md"
           {...form.getInputProps("email")}
@@ -52,6 +58,7 @@ export default function Contact() {
         <TextInput
           label="Phone Number (optional)"
           placeholder="Your Phone Number"
+          name="phone"
           type="tel"
           key={form.key("phone")}
           size="md"
@@ -63,6 +70,7 @@ export default function Contact() {
           required
           key={form.key("subject")}
           size="md"
+          name="subject"
           {...form.getInputProps("subject")}
         ></TextInput>
         <Textarea
@@ -70,6 +78,7 @@ export default function Contact() {
           required
           placeholder="Message"
           key={form.key("message")}
+          name="message"
           size="md"
           autosize
           minRows={7}

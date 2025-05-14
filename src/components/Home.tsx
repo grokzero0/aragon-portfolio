@@ -14,7 +14,7 @@ export default function Home() {
       <Paper shadow="xl" withBorder p="xl" radius="lg">
         <Title style={{ textAlign: "center" }}>Carlos Aragon Aldana</Title>
         <Text style={{ textAlign: "center" }} my="md">
-          Cinematographer. Producer. Writer. 0
+          Cinematographer. Producer. Writer.
         </Text>
         <Group justify="center">
           <Anchor href="mailto:caragon3@bu.edu">
